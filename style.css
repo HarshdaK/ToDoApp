@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+
+
+footer{
+    color: white;
+    background-color: #003049;
+    text-align: center;
+}
+
+.heading{
+    color: white;
+    background-color: #ffa94d;
+    height: 50px;
+    text-align: center;
+    width: 500px;
+    border-radius: 3px;
+}
+
+.headingParent{
+    display: flex;
+    justify-content: center;
+    background-color: #003049;
+}
+
+h1{
+    padding: 10px;
+}
+
+.mainParent{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #003049;
+    min-height: 100vh;
+    /* max-height: 100%; */
+}
+
+.container{
+    background-color: #003049;
+}
+
+#addTaskBtn{
+    width: 500px;
+    height: 30px;
+    border: none;
+    border-radius: 1px;
+    background-color: #f8dc64;
+    color: #710000;
+    font-weight: 600;
+}
+
+#addTaskBtn:active{
+    background-color: #b1a46d;
+    color: white;
+}
+
+#txtBoxContainer input[type="text"]{
+    width: 433px;
+    height: 30px;
+    border: none;
+    padding-left: 7px;
+    color: #710000;
+    background-color: #f9efba;
+
+}
+
+#txtBoxContainer button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    float: right;
+    background-color: #fdba72;
+}
+
+#txtBoxContainer button:active{
+    background-color: rgb(250,228,171);
+
+}
+
+#txtBoxContainer input[type="checkbox"]{
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: #fdba72;
+    font: inherit;
+    color: currentColor;
+    border: 0.15em solid #fdba72;
+    display: grid;
+    place-content: center;
+
+}
+
+#txtBoxContainer input[type="checkbox"]:hover{
+    background-color: #fdba72e5;
+    
+}
+
+#txtBoxContainer input[type="checkbox"]:checked{
+    accent-color: #fdba72;
+
+}
+
+#txtBoxContainer input[type="checkbox"]:before{
+    content: "";
+    width: 23px;
+    height: 23px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: #710000;
+}
+
+#txtBoxContainer input[type="checkbox"]:checked::before{
+    transform: scale(1);
+}
+
+@media(width: 280px){
+    .heading{
+        width: 280px;
+        height: 40px;
+        font-size: 15px;
+        color: #003049;
+    }
+
+    #addTaskBtn{
+        width: 280px;
+    }
+
+    #txtBoxContainer input[type="text"]{
+        width: 240px;
+        padding-left: 0;
+
+    }
+    #txtBoxContainer input[type="checkbox"]::before{
+        width: 15px;
+        height: 15px;
+    }
+
+    #txtBoxContainer input[type="checkbox"]{
+        width: 20px;
+    }
+
+    #txtBoxContainer button{
+        width: 20px;
+    }
+
+}
+
+@media((min-width:350px) and (max-width:414px)){
+    .heading{
+        width: 350px;
+        height: 40px;
+        font-size: 15px;
+        color: #003049;
+    }
+
+    #addTaskBtn{
+        width: 350px;
+    }
+
+    #txtBoxContainer input[type="text"]{
+        width: 310px;
+        padding-left: 0px;
+
+    }
+
+    #txtBoxContainer input[type="checkbox"]::before{
+        width: 15px;
+        height: 15px;    
+    }
+
+    #txtBoxContainer input[type="checkbox"]{
+        width: 20px;
+    }
+
+    #txtBoxContainer button{
+        width: 20px;
+    }
+}
+
